@@ -9,6 +9,10 @@ public class Tictactoe {
 	    JFrame frame = new JFrame();
 	    JLabel textLabel = new JLabel();
 	    JPanel textPanel = new JPanel();
+		JPanel boardPanel = new JPanel();
+
+		JButton[] buttons = new JButton[9];
+
 
 	    Tictactoe() {
 	        frame.setVisible(true);
@@ -28,6 +32,19 @@ public class Tictactoe {
 	        textPanel.setLayout(new BorderLayout());
 	        textPanel.add(textLabel);
 	        frame.add(textPanel, BorderLayout.NORTH);
+
+			boardPanel.setLayout(new GridLayout(3,3));
+			boardPanel.setBackground(Color.GRAY);
+			frame.add(boardPanel);
+
+			for (int r = 0; r < buttons.length; r++){
+				JButton tile = new JButton();
+				buttons[r] = tile;
+				buttons[r].setFocusable(false);
+				buttons[r].setFont(new Font("Arial", Font.BOLD, 50));
+				buttons[r].setBackground(Color.darkGray);
+				boardPanel.add(tile);
+			}
 	    
 	    }
 
