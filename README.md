@@ -16,3 +16,8 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 ## Dependency Management
 
 The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+
+## why I chose to do tic-tac-toe
+- this is to practice and advance study our OOP course.
+- to create a project that I will use in 3rd term.
+- to practice my coding skills while trying to avoid the so called "Tutorial hell"
